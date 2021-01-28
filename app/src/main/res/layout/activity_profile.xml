@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGrayColor"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RoomKotlin.MakingProfile.ProfileActivity">
+
+    <EditText
+        android:id="@+id/et_name_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="name" />
+
+    <EditText
+        android:id="@+id/et_gender_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="gender" />
+
+    <EditText
+        android:id="@+id/et_email_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="email" />
+
+    <Button
+        android:id="@+id/btn_insert_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD" />
+
+    <TextView
+        android:id="@+id/tv_result_room"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="result_HERE"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>

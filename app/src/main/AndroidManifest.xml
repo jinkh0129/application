@@ -12,24 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".BottomNav.BottomNavLevelUpActivity">
+        <activity android:name=".DictionaryFirebaseWithRoom.FinalDictionaryActivity"></activity>
+        <activity android:name=".RoomKotlin.MakingProfile.ProfileActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <!-- <action android:name="android.intent.action.SEARCH" /> -->
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BottomNav.BottomMainActivity">
-
-        </activity>
+        <activity android:name=".RoomKotlin.RoomKotlinActivity" />
+        <activity android:name=".BottomNav.BottomNavLevelUpActivity"></activity>
+        <activity android:name=".BottomNav.BottomMainActivity" />
         <activity android:name=".SearchWithFirebase.SearchMainActivity" />
         <activity android:name=".FirebasePractice.Getdata" />
         <activity android:name=".FirebasePractice.RealTimeActivity" />
         <activity android:name=".Expandable.ExpandableActivity" />
-        <activity android:name=".FirebaseDictionary.FirebaseDictActivity">
-
-        </activity>
+        <activity android:name=".FirebaseDictionary.FirebaseDictActivity" />
         <activity android:name=".FirebaseNews.FirebaseNewsActivity" />
         <activity android:name=".ModifiedNews.ModifiedNewsActivity" />
         <activity android:name=".newsWithApache.NewsActivity" />

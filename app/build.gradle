@@ -3,8 +3,10 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-android-extensions'
     id 'com.google.gms.google-services'
+    id 'kotlin-kapt'
 
 }
+
 
 android {
     compileSdkVersion 30
@@ -71,6 +73,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx'
     /**CardView만들기*/
     implementation "androidx.cardview:cardview:1.0.0"
-
+    /*room사용하기**/
+    implementation "androidx.room:room-runtime:2.2.6"
+    kapt 'androidx.room:room-compiler:2.2.6'
 
 }
