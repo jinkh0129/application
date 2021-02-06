@@ -128,6 +128,9 @@ class FirebaseNewsActivity : AppCompatActivity() {
                 }
             })
         }
+
+
+
         if (searchView_news != null) {
             searchView_news.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
                 override fun onQueryTextSubmit(query: String?): Boolean {

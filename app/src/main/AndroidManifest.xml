@@ -12,16 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".DictionaryFirebaseWithRoom.FinalDictionaryActivity"></activity>
-        <activity android:name=".RoomKotlin.MakingProfile.ProfileActivity">
+        <activity android:name=".TabLayoutPager.TabPagerActivity"/>
+        <activity android:name=".SQLite.SQLiteActivity"></activity>
+        <activity android:name=".OfflineDictionary.OfflineDictionaryActivity"/>
+        <activity android:name=".DictionaryFirebaseWithRoom.FinalDictionaryActivity" />
+        <activity android:name=".RoomKotlin.MakingProfile.ProfileActivity" />
+        <activity android:name=".RoomKotlin.RoomKotlinActivity" />
+        <activity android:name=".BottomNav.BottomNavLevelUpActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RoomKotlin.RoomKotlinActivity" />
-        <activity android:name=".BottomNav.BottomNavLevelUpActivity"></activity>
         <activity android:name=".BottomNav.BottomMainActivity" />
         <activity android:name=".SearchWithFirebase.SearchMainActivity" />
         <activity android:name=".FirebasePractice.Getdata" />

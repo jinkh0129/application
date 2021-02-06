@@ -4,16 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EEEEEE"
+    android:background="#f7f7f7"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/frag_background_HERE"
-        android:layout_width="match_parent"
-        android:layout_height="336dp"
-        android:background="@color/darkGrayColor"
-        android:gravity="center_vertical"
-        android:orientation="horizontal" />
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/frag_searchView_news"
@@ -35,6 +28,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <Button
@@ -98,6 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/frag_horizontal_scrollView"
         android:layout_marginStart="14dp"
+        android:background="@drawable/btn_shadow"
         android:text="Pick Date" />
 
     <TextView

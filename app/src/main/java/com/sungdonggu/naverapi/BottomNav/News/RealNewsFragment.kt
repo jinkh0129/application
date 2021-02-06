@@ -53,7 +53,13 @@ class RealNewsFragment : Fragment() {
         val year = c.get(Calendar.YEAR)
         val month = c.get(Calendar.MONTH)
         val day = c.get(Calendar.DAY_OF_MONTH)
+
+
+
+
         fragSelectSubject("정치", today)
+
+
 
         date_here.setText("" + year + "/" + month + 1 + "/" + day)
         btn_eco.setOnClickListener {
@@ -102,8 +108,6 @@ class RealNewsFragment : Fragment() {
 
     fun fragSelectSubject(keyword: String, date: String) {
         fragDatabase = FirebaseDatabase.getInstance()
-
-
         fragReference = fragDatabase.getReference("News/$date/$keyword")
 
         if (fragReference != null) {
@@ -148,13 +152,12 @@ class RealNewsFragment : Fragment() {
 
     private fun fragSearchNews(str: String) {
         var fragMyList: ArrayList<FirebaseNews> = ArrayList()
-        var fragObj: FirebaseNews
         for (fragObj in fragNewsList) {
             if (fragObj.title?.toLowerCase()?.contains(str.toLowerCase()) == true) {
                 fragMyList.add(fragObj)
             }
         }
-        val fragAdapterClass: FirebaseNewsAdapter = FirebaseNewsAdapter(fragMyList)
+        val fragAdapterClass = FirebaseNewsAdapter(fragMyList)
         frag_firebase_recyclerView.adapter = fragAdapterClass
     }
 

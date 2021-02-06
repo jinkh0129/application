@@ -1,7 +1,7 @@
 package com.sungdonggu.naverapi.BottomNav.Dict
 
-class RealDictionary() {
-    var word: String? = null
+class RealDictionary {
     var content: String? = null
     var expandable: Boolean = false
+    var word: String? = null
 }

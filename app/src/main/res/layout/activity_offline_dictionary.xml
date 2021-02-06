@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f7f7f7"
     android:orientation="vertical"
-    android:padding="12dp">
+    tools:context=".OfflineDictionary.OfflineDictionaryActivity">
 
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/frag_searchView_dictionary"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_margin="5dp"
-        android:padding="10dp"
-        app:queryHint="Search" />
 
     <TextView
-        android:id="@+id/tv_dict"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/frag_searchView_dictionary"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="10dp"
         android:fontFamily="sans-serif-black"
         android:text="경제용어사전"
@@ -28,11 +21,9 @@
         android:textSize="25sp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/frag_dict_recyclerView"
+        android:id="@+id/offline_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/tv_dict"
-        android:background="#ffffff" />
+        android:background="#f7f7f7" />
 
-
-</RelativeLayout>
+</LinearLayout>
